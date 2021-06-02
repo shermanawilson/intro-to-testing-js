@@ -5,6 +5,6 @@ const helloWorld = function() {
     //console.log("Hello, World!");
 }
 
-function sayHello() {
-    return "hello";
+function sayHello(value) {
+    return "Hello, " + value + "!";
 }
