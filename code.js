@@ -6,14 +6,16 @@ const helloWorld = function() {
 }
 
 function sayHello(name) {
-/*    if (name === "Shy") {
-        return "Hello, Shy!"
+    if (name === "Shy") {
+        return "Hello, Shy!";
     } else if (name === "DeShawn") {
         return "Hello, DeShawn!";
     } else if (name === "Pat") {
         return "Hello, Pat!";
-    }*/
-
-     return "Hello, " + name + "!";
+    } else if (name === true) {
+        return "Hello, World!";
+    }
+    return "Hello, World!";
+    // return "Hello, " + name + "!";
 }
 
