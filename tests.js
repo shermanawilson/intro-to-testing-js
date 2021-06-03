@@ -22,11 +22,11 @@ describe("sayHello", function() {
     it("should return a string and when called", function() {
         expect(typeof sayHello()).toBe("string");
     });
-    it('should return the string "Hello, Shy!" when executed', function() {
-        expect(sayHello("Shy")).toBe("Hello, Shy!");
+    it('should return the string "Hello, Jane!" when executed', function() {
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
     });
-    it('should return the string "Hello, DeShawn!" when executed', function() {
-        expect(sayHello("DeShawn")).toBe("Hello, DeShawn!");
+    it('should return the string "Hello, Alex!" when executed', function() {
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
     });
     it('should return the string "Hello, Pat!" when executed', function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
@@ -34,13 +34,22 @@ describe("sayHello", function() {
    //it('should return the string "Hello, World!" when executed', function() {
    //     expect(sayHello()).toBe("Hello, World!");
     //});
-    it('should return the string "Hello, World!" when executed', function() {
-        expect(sayHello("World")).toBe("Hello, World!");
+    it('should return the string "Hello, World!" when executed with no argument', function() {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    /*it('should return "Hello, name!" when calling someones name', function() {
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    }); */
+    it('should return "Hello, World!" when passed the argument of true', function() {
+        expect(sayHello()).toBe("Hello, World!");
     });
 });
-/*
+
 describe("isFive", function() {
-    it("", function() {
-        expect(isFive().toBe(""));
+    it("should be a defined function", function() {
+        expect(typeof isFive).toBe("function");
     });
-});  */
+});
+
