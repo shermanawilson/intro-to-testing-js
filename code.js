@@ -4,12 +4,17 @@ const helloWorld = function() {
     return "Hello, World!";
     //console.log("Hello, World!");
 }
-
+// helloWorld Function
 function sayHello(input) {
-    if (typeof input !== "string") {
-  //  if (input === undefined || input === true || input === false) {
-        return "Hello, World!";
+    if (typeof input === "string" && isNaN(input)) {
+       //if (isNaN(input)) {
+            return "Hello, " + input + "!";
+       // }
+        //  if (input === undefined || input === true || input === false) {
+        //return "Hello, World!";
     }
+    return "Hello, World!";
+}
    /* if (name === "Jane") {
         return "Hello, Jane!";
     } else if (name === "Alex") {
@@ -20,11 +25,13 @@ function sayHello(input) {
         return "Hello, World!";
     }
     return "Hello, World!"; */
-    return "Hello, " + input + "!";
+
+
+// is five function
+function isFive(value) {
+    if (typeof value === "boolean")
+    return "boolean";
 }
 
-function isFive(value) {
-    return "";
-    }
    // return Boolean(value);
 
